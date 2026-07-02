@@ -13,7 +13,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Núcleo Laboratorios — Construimos lo que falta</title>
-<meta name="description" content="Ecosistema digital argentino. Cripto, software inmobiliario, transporte y firma digital certificada. Cuatro productos, un ecosistema.">
+<meta name="description" content="Ecosistema digital argentino. Cripto, software inmobiliario, firma digital, transporte y billetera multi-cripto. Cinco productos, un ecosistema.">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -83,6 +83,14 @@ section{padding:80px 40px}
 .icon-crm{background:#f0fdf4}
 .icon-cert{background:#faf5ff}
 .icon-drive{background:#eff6ff}
+.icon-wallet{background:#ecfdf5}
+.prod-card-wallet{grid-column:1/-1;border-color:#a7f3d0}
+.prod-card-wallet-inner{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.wallet-features{padding-top:4px}
+.wallet-features-label{font-size:11px;font-weight:500;color:#999;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
+.wallet-pills{display:flex;flex-wrap:wrap;gap:8px}
+.wallet-pill{font-size:12px;color:#1D9E75;background:#ecfdf5;border:0.5px solid #a7f3d0;padding:4px 10px;border-radius:20px}
+@media(max-width:700px){.prod-card-wallet-inner{grid-template-columns:1fr}}
 
 /* POR QUÉ */
 .porque{background:#080f1a}
@@ -166,13 +174,13 @@ footer{background:#080f1a;padding:48px 40px;display:flex;align-items:center;just
     <div class="hero-tag"><span class="hero-tag-dot"></span> Ecosistema digital argentino</div>
     <div class="hero-slogan">Construimos lo que falta</div>
     <h1>Tecnología que <span class="accent">transforma</span><br>negocios reales</h1>
-    <p>Cripto, software inmobiliario, firma digital certificada y transporte. Cuatro productos conectados, pensados para Latinoamérica.</p>
+    <p>Cripto, software inmobiliario, firma digital, transporte y billetera multi-cripto. Cinco productos conectados, pensados para Latinoamérica.</p>
     <div class="hero-btns">
       <a href="#productos"><button class="btn-green">Ver nuestros productos</button></a>
       <a href="#contacto"><button class="btn-outline">Contacto</button></a>
     </div>
     <div class="hero-products">
-      <div class="hero-prod"><div class="hero-prod-name">NKL · CRM · CERT · DRIVE</div></div>
+      <div class="hero-prod"><div class="hero-prod-name">NKL · CRM · CERT · DRIVE · WALLET</div></div>
     </div>
   </div>
 </div>
@@ -244,6 +252,37 @@ footer{background:#080f1a;padding:48px 40px;display:flex;align-items:center;just
         <span class="prod-link" style="opacity:.5;cursor:default;pointer-events:none">Próximamente</span>
       </div>
 
+      <div class="prod-card prod-card-wallet">
+        <div class="prod-card-top">
+          <div class="prod-icon icon-wallet">💳</div>
+          <span class="prod-status status-dev">⟳ En desarrollo</span>
+        </div>
+        <h3>Núcleo Wallet</h3>
+        <div class="prod-tagline">La billetera donde tu cripto tiene uso real</div>
+        <div class="prod-card-wallet-inner">
+          <div>
+            <div class="prod-problema">
+              <div class="prod-problema-label">El problema</div>
+              <p>Las billeteras cripto actuales son islas: guardás tu cripto, no podés usarla para nada concreto, y el token propio no tiene utilidad real.</p>
+            </div>
+            <div class="prod-solucion">Billetera multi-cripto con integración Mercado Pago. Cargás ARS, convertís a NKL y pagás viajes en Drive, licencias CRM o certificados CERT — todo desde un mismo lugar. El hub financiero del ecosistema Núcleo.</div>
+            <span class="prod-link" style="opacity:.5;cursor:default;pointer-events:none">Lanzamiento nov. 2026</span>
+          </div>
+          <div class="wallet-features">
+            <div class="wallet-features-label">Incluye</div>
+            <div class="wallet-pills">
+              <span class="wallet-pill">NKL Nativo</span>
+              <span class="wallet-pill">NKL BEP-20</span>
+              <span class="wallet-pill">ARS / Mercado Pago</span>
+              <span class="wallet-pill">BNB · USDT · USDC</span>
+              <span class="wallet-pill">QR interoperable BCRA</span>
+              <span class="wallet-pill">Custodia híbrida</span>
+              <span class="wallet-pill">Cashback en NKL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -262,7 +301,7 @@ footer{background:#080f1a;padding:48px 40px;display:flex;align-items:center;just
       <div class="por-card">
         <div class="por-icon">🧩</div>
         <div class="por-title">Ecosistema integrado</div>
-        <div class="por-text">Los cuatro productos comparten el token NKL como base. Minar NKL activa licencias, reduce costos y conecta el ecosistema.</div>
+        <div class="por-text">Los cinco productos comparten el token NKL como base. Minar NKL activa licencias, reduce costos y conecta el ecosistema — con Wallet como hub financiero central.</div></div>
       </div>
       <div class="por-card">
         <div class="por-icon">📍</div>
@@ -277,7 +316,7 @@ footer{background:#080f1a;padding:48px 40px;display:flex;align-items:center;just
   <div class="section-inner">
     <div class="section-tag">Roadmap</div>
     <div class="section-title">Plan de lanzamientos 2026</div>
-    <div class="section-sub">Cuatro productos, cuatro meses.</div>
+    <div class="section-sub">Cinco productos, cinco meses.</div>
     <div class="timeline">
       <div class="tl-item">
         <div class="tl-left"><div class="tl-dot done">✓</div><div class="tl-line"></div></div>
@@ -304,11 +343,19 @@ footer{background:#080f1a;padding:48px 40px;display:flex;align-items:center;just
         </div>
       </div>
       <div class="tl-item">
-        <div class="tl-left"><div class="tl-dot pend">○</div></div>
+        <div class="tl-left"><div class="tl-dot pend">○</div><div class="tl-line"></div></div>
         <div class="tl-body">
-          <div class="tl-date">23 de agosto de 2026</div>
+          <div class="tl-date">Agosto 2026</div>
           <div class="tl-name">Núcleo Drive</div>
           <div class="tl-desc">App de transporte para conductor y pasajero. Lanzamiento Buenos Aires.</div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-left"><div class="tl-dot pend" style="background:#ecfdf5;border:2px solid #1D9E75;color:#1D9E75">○</div></div>
+        <div class="tl-body">
+          <div class="tl-date">Noviembre 2026</div>
+          <div class="tl-name" style="color:#1D9E75">Núcleo Wallet</div>
+          <div class="tl-desc">Billetera multi-cripto con Mercado Pago. Hub financiero del ecosistema.</div>
         </div>
       </div>
     </div>
@@ -327,6 +374,7 @@ footer{background:#080f1a;padding:48px 40px;display:flex;align-items:center;just
         <a href="https://nucleocrm.net" target="_blank" class="prod-pill">Núcleo CRM →</a>
         <a href="https://nucleocert.com" target="_blank" class="prod-pill">Núcleo CERT →</a>
         <span class="prod-pill">Núcleo Drive — próximamente</span>
+        <span class="prod-pill" style="color:#1D9E75;border-color:#a7f3d0;background:#ecfdf5">💳 Núcleo Wallet — nov. 2026</span>
       </div>
     </div>
   </div>
