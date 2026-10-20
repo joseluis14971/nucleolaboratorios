@@ -429,7 +429,36 @@ footer{background:#080f1a;padding:48px 40px;display:flex;align-items:center;just
       </div>
 
     </div>
-  </div>
+     <style>
+      .logos-marquee{overflow:hidden;margin-top:40px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+      .logos-track{display:flex;gap:56px;align-items:center;width:max-content;animation:logos-scroll 45s linear infinite}
+      .logos-marquee:hover .logos-track{animation-play-state:paused}
+      .logos-track img{height:48px;border-radius:6px;flex:none}
+      @keyframes logos-scroll{to{transform:translateX(-50%)}}
+      @media (prefers-reduced-motion:reduce){.logos-track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}.logos-track [aria-hidden]{display:none}}
+    </style>
+    <div class="logos-marquee">
+      <div class="logos-track">
+        <img src="logo-impact.png" alt="Impact Social Cup">
+        <img src="logo-ewc.png" alt="Entrepreneurship World Cup">
+        <img src="logo-escala.png" alt="Escala GovTech">
+        <img src="logo-embarca.png" alt="Embarca Ventures">
+        <img src="logo-eawards.png" alt="NTT DATA Foundation eAwards">
+        <img src="logo-santanderx.png" alt="Santander X Award 2026">
+        <!-- acá va el logo de Banco Nación cuando lo tengas -->
+        <img src="logo-impact.png" alt="" aria-hidden="true">
+        <img src="logo-ewc.png" alt="" aria-hidden="true">
+        <img src="logo-escala.png" alt="" aria-hidden="true">
+        <img src="logo-embarca.png" alt="" aria-hidden="true">
+        <img src="logo-eawards.png" alt="" aria-hidden="true">
+        <img src="logo-santanderx.png" alt="" aria-hidden="true">
+      </div>
+    </div>
+    <p style="font-size:12px;color:#888;letter-spacing:.08em;text-transform:uppercase;margin:32px 0 12px">Con tecnología de</p>
+    <div style="display:flex;gap:24px;justify-content:center;align-items:center">
+      <img src="logo-mercadopago.png" alt="Mercado Pago" style="height:40px;border-radius:6px">
+      <img src="logo-twilio.png" alt="Twilio" style="height:40px;border-radius:6px">
+    </div> </div>
 </section>
 	
 <section id="contacto" class="contacto">
